@@ -13,7 +13,8 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://Jesse-pharma.com
+url: https://jesse-pharma.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -29,6 +30,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - "google*.html"
+  - "baidu_verify_*.html"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -102,3 +105,8 @@ theme: icarus
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+  rel: false
